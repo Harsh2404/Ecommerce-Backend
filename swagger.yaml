@@ -1,0 +1,69 @@
+openapi: "3.0.0"
+
+info:
+  title: Learn express and swwagger- swaggerDocs
+  description: Lco course segment about learning documenting api
+  version: 1.0.0
+  contact: 
+    email: harshshah2499@gmail.con
+    url: "https://harsh.dev"
+
+servers:
+  - url: "{protocol}://localhost:4000/api/{version}"
+    description: for local-host
+    variables:
+      version:
+        enum:
+          - v1
+        default: v1
+      protocol:
+        enum:
+          - http
+        default: http
+
+components:
+  securitySchemes:
+    cookieAuth:
+      type: apiKey
+      in: cookie
+      name: token  # cookie name 
+
+security:
+  - cookieAuth: []
+
+paths:
+    /:
+      get:
+        tags:
+          - home
+        summary: returns a greet message
+        responses:
+          '200':
+            description: All good success
+            content:
+              application:
+                schema:
+                  type: string
+                  example: "mystring" 
+          '400':
+            description: Path not found
+          '500':
+            description: Internal server error
+    /dummy:
+      get:
+        tags:
+          - home
+        summary: returns a greet message
+        responses:
+          '200':
+            description: All good success
+            content:
+              application:
+                schema:
+                  type: string
+                  example: "mystring" 
+          '400':
+            description: Path not found
+          '500':
+            description: Internal server error
+    
