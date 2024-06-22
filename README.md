@@ -10,3 +10,5 @@ features such as Order Processing, product management(CRUD operations), user aut
 - Payment integration with popular gateways (Stripe, RazorPay)
 - RESTful API design
 - Secure and scalable architecture
+
+Created API documentation using Swagger docs and used Postman API testing functionality for testing.
