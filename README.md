@@ -1,4 +1,4 @@
-# Ecommerce-Backend - eCommerce Backend Project
+# Ecommerce-Backend -Project
 
 Welcome to  Ecommerce-Backend, the robust backend solution in ExpressJS for your eCommerce platform! This project offers a comprehensive setup, including 
 features such as Order Processing, product management(CRUD operations), user authentication, and payment integration(Stripe / RazorPay both setup integrated).
